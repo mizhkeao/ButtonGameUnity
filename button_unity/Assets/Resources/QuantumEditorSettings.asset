@@ -69,9 +69,7 @@ MonoBehaviour:
   UseQuantumAssetInspector: 1
   UseAssetBasePostprocessor: 1
   UseQuantumToolbarUtilities: 1
-  QuantumToolbarAnchor: 0
-  QuantumToolbarSize: 200
-  QuantumToolbarOffset: 200
+  QuantumToolbarZone: 0
   UsePhotonAppVersionsPostprocessor: 1
   EntityComponentInspectorMode: 2
   FPDisplayPrecision: 5
@@ -79,7 +77,7 @@ MonoBehaviour:
   AutoBuildOnSceneSave: 96
   AutoBuildOnPlaymodeChanged: 96
   AutoBuildOnBuild: 96
-  QuantumSolutionPath: ../quantum_code/quantum_code.sln
+  QuantumSolutionPath: ../button_quantum/button_quantum.sln
   MergeWithVisualStudioSolution: 0
   ImportQuantumLibrariesImmediately: 0
   AutoRunQtnCodeGen: 0

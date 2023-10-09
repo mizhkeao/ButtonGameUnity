@@ -78,8 +78,6 @@
     <Compile Include="Core\Core.cs" />
     <Compile Include="Frame.User.cs" />
     <Compile Include="FrameContext.User.cs" />
-    <Compile Include="Platformer\PlayerSpawnSystem.cs" />
-    <Compile Include="Platformer\MovementSystem.cs" />
     <Compile Include="RuntimeConfig.User.cs" />
     <Compile Include="RuntimePlayer.User.cs" />
     <Compile Include="SimulationConfig.User.cs" />
@@ -90,9 +88,7 @@
     <EmbeddedResource Include="db.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Platformer\PlayerLink.qtn" />
-		<None Include="Platformer\Input.qtn" />
-		<None Include="Platformer\Ball.qtn" />
+    <Folder Include="Game\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
