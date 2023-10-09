@@ -1,0 +1,4 @@
+component Ball 
+{
+	FPVector2 spin;
+}
