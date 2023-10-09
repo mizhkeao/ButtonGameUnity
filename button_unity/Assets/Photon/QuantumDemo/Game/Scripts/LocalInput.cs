@@ -1,13 +1,13 @@
 ﻿using System;
 using Photon.Deterministic;
 using Quantum;
-using Quantum.Platformer;
+using Quantum.Game;
 using UnityEngine;
 
 public class LocalInput : MonoBehaviour {
 	private void OnEnable () {
 		QuantumCallback.Subscribe (this, (CallbackPollInput callback) => PollInput (callback));
-		QuantumCallback.Subscribe<EventLogEvent> (this, (e) => Debug.Log ($"LogEvent {e.log}"));
+		QuantumEvent.Subscribe<EventLogEvent> (this, (e) => Debug.Log ($"LogEvent {e.log}"));
 	}
 
 	public void PollInput (CallbackPollInput callback) {

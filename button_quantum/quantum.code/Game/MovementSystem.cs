@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Quantum.Platformer {
+namespace Quantum.Game {
     public unsafe class MovementSystem : SystemMainThreadFilter<MovementSystem.Filter> {
         // 使用filter来遍历拥有特定component的entity
         public struct Filter {

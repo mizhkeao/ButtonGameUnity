@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Quantum.Platformer;
+using Quantum.Game;
 
 namespace Quantum {
   public static class SystemSetup {
@@ -23,7 +23,7 @@ namespace Quantum {
         new Core.PlayerConnectedSystem(),
 
         // user systems go here
-        new MovementSystem (),
+        new MovementSystem(),
       };
     }
   }
