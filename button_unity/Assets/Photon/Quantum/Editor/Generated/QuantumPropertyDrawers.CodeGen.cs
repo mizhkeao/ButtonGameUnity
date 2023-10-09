@@ -8,6 +8,9 @@ namespace Quantum.Editor {
   using UnityEngine;
   using UnityEditor;
 
+  [CustomPropertyDrawer(typeof(Quantum.QString256))]
+  partial class QStringDrawer {}
+
   [CustomPropertyDrawer(typeof(Quantum.Prototypes.InputButtons_Prototype))]
   partial class PrototypeDrawer {}
 }

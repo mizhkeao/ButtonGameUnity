@@ -1,0 +1,8 @@
+﻿input {
+	button Jump;
+	FPVector2 Direction;
+}
+
+event LogEvent {
+	QString<256> log;
+}
