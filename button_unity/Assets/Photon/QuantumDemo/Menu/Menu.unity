@@ -9273,9 +9273,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerData:
-    CharacterPrototype:
+    _characterPrototype:
       Id:
-        Value: 668644909559830256
+        Value: 2434752657139537864
 --- !u!4 &1565167105
 Transform:
   m_ObjectHideFlags: 0

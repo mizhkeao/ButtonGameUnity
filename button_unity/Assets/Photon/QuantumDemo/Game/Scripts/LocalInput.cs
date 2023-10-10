@@ -13,6 +13,8 @@ public class LocalInput : MonoBehaviour {
 	public void PollInput (CallbackPollInput callback) {
 		Quantum.Input input = new Quantum.Input ();
 
+		input.Jump = UnityEngine.Input.GetButton ("Jump");
+
 		var x = UnityEngine.Input.GetAxisRaw ("Horizontal");
 		var y = UnityEngine.Input.GetAxisRaw ("Vertical");
 

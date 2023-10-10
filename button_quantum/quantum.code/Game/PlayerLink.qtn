@@ -1,0 +1,3 @@
+﻿component PlayerLink {
+	player_ref player;
+}
