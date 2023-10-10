@@ -4742,10 +4742,10 @@ MonoBehaviour:
     Seed: 0
     Map:
       Id:
-        Value: 0
+        Value: 1710471675203725834
     SimulationConfig:
       Id:
-        Value: 0
+        Value: 5
 --- !u!224 &833318423
 RectTransform:
   m_ObjectHideFlags: 0
