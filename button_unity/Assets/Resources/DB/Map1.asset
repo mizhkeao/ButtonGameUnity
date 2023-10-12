@@ -20,9 +20,9 @@ MonoBehaviour:
     UserAsset:
       Id:
         Value: 0
-    Scene: Game
-    ScenePath: Assets/Photon/QuantumDemo/Game/Game.unity
-    SceneGuid: 03bd5ba32b9950244a08f22579187d8b
+    Scene: GameScene
+    ScenePath: Assets/Scenes/GameScene.unity
+    SceneGuid: ef8250ea926ea7d4083481d59a975ac0
     WorldSize: 256
     BucketsCount: 16
     BucketsSubdivisions: 8
@@ -173,6 +173,64 @@ MonoBehaviour:
           RawValue: 0
         Z:
           RawValue: 2949119
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - PlayerLink: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D:
+    - ShapeConfig:
+        ShapeType: 1
+        PolygonCollider:
+          Id:
+            Value: 0
+        CircleRadius:
+          RawValue: 32768
+        EdgeExtent:
+          RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+        RotationOffset:
+          RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 0
+      Layer: 0
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D:
+    - CallbackFlags:
+        Value: 0
+    PhysicsCallbacks3D: []
+    Transform2D:
+    - Position:
+        X:
+          RawValue: 29097984
+        Y:
+          RawValue: 0
+      Rotation:
+        RawValue: 0
+    Transform2DVertical: []
+    Transform3D: []
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []
