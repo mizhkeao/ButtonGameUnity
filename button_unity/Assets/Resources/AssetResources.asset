@@ -41,16 +41,21 @@ MonoBehaviour:
         Id:
           Value: 5
       ResourcePath: DB/Configs/SimulationConfig
+    - Path: Resources/DB/Prefabs/SpawnedCircle|EntityView
+      AssetRef:
+        Id:
+          Value: 739276422120501563
+      ResourcePath: DB/Prefabs/SpawnedCircle
+    - Path: Resources/DB/Prefabs/SpawnedCircle|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 866010553819879994
+      ResourcePath: DB/Prefabs/SpawnedCircle
     - Path: Resources/DB/Map1_mesh
       AssetRef:
         Id:
           Value: 1090595483060781529
       ResourcePath: DB/Map1_mesh
-    - Path: Resources/DB/Prefabs/SpawnedCircle|EntityPrototype
-      AssetRef:
-        Id:
-          Value: 1400717990812701946
-      ResourcePath: DB/Prefabs/SpawnedCircle
     - Path: Resources/DB/PlayerCharacter|EntityView
       AssetRef:
         Id:
@@ -66,8 +71,3 @@ MonoBehaviour:
         Id:
           Value: 2434752657139537864
       ResourcePath: DB/PlayerCharacter
-    - Path: Resources/DB/Prefabs/SpawnedCircle|EntityView
-      AssetRef:
-        Id:
-          Value: 4528783033578435999
-      ResourcePath: DB/Prefabs/SpawnedCircle

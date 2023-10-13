@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Photon.Deterministic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Quantum.Game.MovementSystem;
 
 namespace Quantum.ButtonGame {
     public unsafe class GameManager : SystemMainThreadFilter<GameManager.Filter> {
@@ -15,7 +15,7 @@ namespace Quantum.ButtonGame {
         public override void OnEnabled (Frame f) {
             base.OnEnabled (f);
 
-            f.Global -> tick = 0;
+            f.Global -> tick = 0;                                                       
         }
 
         public override void Update (Frame f, ref Filter filter) {
@@ -31,9 +31,17 @@ namespace Quantum.ButtonGame {
             if (f.Unsafe.TryGetPointer (filter.entity, out PlayerLink* playerLink)) {
                 input = *f.GetPlayerInput (playerLink -> player);
             }
-            f.Events.LogEvent ("" + input.MouseDown);
+            //f.Events.LogEvent ("" + input.MouseDown);
             if (input.MouseDown) {
-                f.Events.LogEvent ("" + input.MouseDownPos);
+                //f.Events.LogEvent ("" + input.MouseDownPos);
+                MouseDownHandler (f, input.MouseDownPos);
+            }
+        }
+
+        private void MouseDownHandler (Frame f, FPVector3 hitPoint) {
+            var hit = f.Physics3D.Raycast (hitPoint + FPVector3.Up, FPVector3.Down, 10);
+            if (hit != null) {
+                f.Destroy (hit.Value.Entity);
             }
         }
     }

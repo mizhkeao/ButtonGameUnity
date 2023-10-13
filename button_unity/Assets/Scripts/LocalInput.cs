@@ -15,8 +15,12 @@ public class LocalInput : MonoBehaviour {
 
     private void Update () {
 		if (UnityEngine.Input.GetMouseButtonDown (0)) {
-			_mouseDownPos = UnityEngine.Input.mousePosition;
-			_mouseDown = true;
+			Ray ray = Camera.main.ScreenPointToRay (UnityEngine.Input.mousePosition);
+			if (Physics.Raycast (ray, out RaycastHit hit)) {
+				_mouseDownPos = hit.point;
+				Debug.Log (_mouseDownPos);
+				_mouseDown = true;
+			}
 		}
 		else if (UnityEngine.Input.GetMouseButtonUp (0)) {
 			_mouseDown = false;
