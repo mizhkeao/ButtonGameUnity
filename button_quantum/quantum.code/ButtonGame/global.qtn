@@ -1,0 +1,9 @@
+﻿global {
+	int tick;
+}
+
+signal OnSpawnButton ();
+
+component IButton {
+	int tick;
+}

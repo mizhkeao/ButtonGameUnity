@@ -18,10 +18,6 @@ namespace Quantum.Game {
                 player = player,
             };
             frame.Add (entity, playerLink);
-
-            if (frame.Unsafe.TryGetPointer<Transform3D> (entity, out var transform)) {
-                transform -> Position.X = 0 + player;
-            }
         }
     }
 }

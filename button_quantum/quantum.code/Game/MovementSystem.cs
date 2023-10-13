@@ -18,6 +18,7 @@ namespace Quantum.Game {
         // gives access to the complete game state for that specific frame.
         // frame: 帧数据 保存了物体位置等信息
         public override void Update (Frame frame, ref Filter filter) {
+            /*
             Input input = default;
             if (frame.Unsafe.TryGetPointer (filter.entity, out PlayerLink* playerLink)) {
                 input = *frame.GetPlayerInput (playerLink -> player);
@@ -30,6 +31,7 @@ namespace Quantum.Game {
 
             // 第三个para是移动的vec
             filter.characterController -> Move (frame, filter.entity, input.Direction.XOY);
+            */
         }
     }
 }

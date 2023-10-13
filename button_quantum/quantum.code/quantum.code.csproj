@@ -72,6 +72,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ButtonGame\ButtonHandler.cs" />
+    <Compile Include="ButtonGame\GameManager.cs" />
     <Compile Include="CommandSetup.User.cs" />
     <Compile Include="Core\CodeGen.cs" />
     <Compile Include="CommandSetup.Legacy.cs" />
@@ -91,7 +93,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Game\Input.qtn" />
+    <None Include="ButtonGame\global.qtn" />
+    <None Include="ButtonGame\Input.qtn" />
     <None Include="Game\PlayerLink.qtn" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

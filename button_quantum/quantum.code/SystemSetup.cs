@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Quantum.Game;
+using Quantum.ButtonGame;
 
 namespace Quantum {
   public static class SystemSetup {
@@ -23,8 +24,11 @@ namespace Quantum {
         new Core.PlayerConnectedSystem(),
 
         // user systems go here
-        new MovementSystem (),
+        //new MovementSystem (),
+        //new PlayerSpawnSystem (),
+        new GameManager (),
         new PlayerSpawnSystem (),
+        new ButtonHandler (),
       };
     }
   }

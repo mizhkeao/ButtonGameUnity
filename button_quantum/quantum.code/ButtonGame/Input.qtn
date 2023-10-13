@@ -1,6 +1,6 @@
 ﻿input {
-	button Jump;
-	FPVector2 Direction;
+	FPVector3 MouseDownPos;
+	bool MouseDown;
 }
 
 event LogEvent {
